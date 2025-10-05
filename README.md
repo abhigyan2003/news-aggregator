@@ -76,45 +76,17 @@ npm run dev
 | POST | `/user/logout` | Yes | Logout user |
 | GET | `/user/news` | Yes | Get personalized news |
 
-## 📝 Register/Login Body
-
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "securepass123",
-  "categories": ["Technology", "Business"]
-}
-```
-
-## 🤖 AI Summarization
-
-- Runs daily at **6:30 PM IST**
-- Fetches latest articles from GNews
-- Uses **Grok-3** to generate summaries
-- Manual run: `node Backend/run-article-job.js`
 
 ## 🔒 Security
 
-- ✅ Password hashing (bcrypt)
-- ✅ JWT authentication
-- ✅ Token blacklisting on logout
-- ✅ HTTP-only cookies
-- ✅ Input validation
+-  Password hashing (bcrypt)
+-  JWT authentication
+-  Token blacklisting on logout
+-  HTTP-only cookies
+-  Input validation
 
 ## 📦 Database Models
 
 **User:** name, email, password, categories  
 **Article:** heading, picture, author, website_url, description, categories, publishedAt
 
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first.
-
-## 📄 License
-
-MIT
-
----
-
-**Made with ❤️ by [Your Name]**
